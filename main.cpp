@@ -59,13 +59,14 @@ int main() {
               break;*/
 
             case 1:
-                bool comparacion = fnbuscar(boletos, FNCompararCiudades;
+            {
+                bool comparacion = fnbuscar(boletos, FNCompararCiudades);
                 if (comparacion)
                     cout << "El boleto entre estas ciudades ha sido vendido." << endl;
                 else
                     cout << "Boleto disponible." << endl;
                 break;
-
+            }
             case 2:
                 cout << "¡Gracias!";
                 flagAccionUsuario = 1;

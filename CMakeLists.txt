@@ -1,18 +1,16 @@
 cmake_minimum_required(VERSION 3.17)
-<<<<<<< HEAD
+#<<<<<<< HEAD
 project(Examen_1)
 
 set(CMAKE_CXX_STANDARD 20)
 
 add_library(Examen_1 SHARED library.cpp library.h)
-=======
+#=======
 project(tarea_2_boletos)
 
 set(CMAKE_CXX_STANDARD 20)
 
-include_directories(/home/gerardo_alipi/CLionProjects/tarea_2_boletos)
-link_directories(/home/gerardo_alipi/CLionProjects/tarea_2_boletos/cmake-build-debug)
-target_link_libraries(tarea_2_boletos libtarea_2_boletos.so)
-
-add_executable(tarea_2_boletos main.cpp)
->>>>>>> Gerardo
+include_directories(/home/alexandergl76/Documentos/Arquitecturas_Programables/Tarea_2_Boletos_B)
+link_directories(/home/alexandergl76/Documentos/Arquitecturas_Programables/Tarea_2_Boletos_B/cmake-build-debug)
+add_executable(Tarea_2_Boletos_B main.cpp)# >>>>>>> Gerardo
+target_link_libraries(Tarea_2_Boletos_B libExamen_1.so)
