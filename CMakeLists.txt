@@ -3,8 +3,8 @@ project(tarea_2_boletos)
 
 set(CMAKE_CXX_STANDARD 20)
 
-include_directories()
-link_directories()
-target_link_libraries()
+include_directories(/home/gerardo_alipi/CLionProjects/tarea_2_boletos)
+link_directories(/home/gerardo_alipi/CLionProjects/tarea_2_boletos/cmake-build-debug)
+target_link_libraries(tarea_2_boletos libtarea_2_boletos.so)
 
 add_executable(tarea_2_boletos main.cpp)
