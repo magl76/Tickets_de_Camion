@@ -9,18 +9,22 @@ int accionUsuario, flagAccionUsuario = 0;
 string origen, destino;
 vector <TBoleto> boletos;
 
-// ¿Debe ir en la biblioteca?
-bool fn_comparar_ciudades(TBoleto& p){
+bool FNCompararCiudades(TBoleto &p){
+    cout << "Ingrese origen del boleto: ";
+    cin >> origen;
+    cout << "Ingrese destino del boleto: ";
+    cin >> destino;
+
     if (p.origen == origen && p.destino == destino)
         return true;
     else
         return false;
-};
+}
 
 int main() {
-    TBoleto boletoA {"Puebla", "Tabasco", {21, Tmes::Febrero, 2021, 14, 30}, 350};
+    TBoleto boletoA {"Puebla", "Tabasco", {28, Tmes::febrero, 2021, 21, 15}, 1050};
     boletos.push_back(boletoA);
-    TBoleto boletoB {"CDMX", "Tabasco", {21, Tmes::Febrero, 2021, 14, 30}, 350};
+    TBoleto boletoB {"Oaxaca", "Tabasco", {28, Tmes::febrero, 2021, 21, 15}, 1050};
     boletos.push_back(boletoB);
 
     while (true){
@@ -35,36 +39,40 @@ int main() {
         cin >> accionUsuario;
 
         switch (accionUsuario) {
-
-            //Agregar una nueva estructura de boleto al vector (preguntar en clase)
+            //¿Agregar una nueva estructura de boleto al vector? (preguntar en clase)
             /*case 0:
               cout << "Ingrese origen del boleto: ";
               cin >> nuevo_origen;
               cout << "Ingrese destino del boleto: ";
               cin >> nuevo_destino;
+              cout << "Ingrese el día de partida: ";
+              cin >> nuevo_dia;
+              cout << "Ingrese el mes de partida: ";
+              cin >> nuevo_mes;
+              cout << "Ingrese el año de partida: ";
+              cin >> nuevo_año;
+              cout << "Ingrese la hora de partida: ";
+              cin >> nueva_hora;
+              cout << "Ingrese los minutos de partida: ";
+              cin >> nuevos_minutos;
 
               break;*/
 
             case 1:
-                cout << "Ingrese origen del boleto: ";
-                cin >> origen;
-                cout << "Ingrese destino del boleto: ";
-                cin >> destino;
-
-                bool comparacion = fnbuscar(boletos, fn_comparar_ciudades);
+                bool comparacion = fnbuscar(boletos, FNCompararCiudades;
                 if (comparacion)
-                    cout << "El boleto entre estas ciudades ha sido vendido" << endl;
+                    cout << "El boleto entre estas ciudades ha sido vendido." << endl;
                 else
-                    cout << "Boleto disponible" << endl;
+                    cout << "Boleto disponible." << endl;
                 break;
 
             case 2:
-                cout << "Gracias";
+                cout << "¡Gracias!";
                 flagAccionUsuario = 1;
                 break;
 
             default:
-                cout << "Eliga otra opción";
+                cout << "Eliga otra opción.";
                 break;
         }
 
