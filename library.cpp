@@ -6,10 +6,10 @@
 
 using namespace std;
 
-bool fnbuscar(vector <Tticket> &vec, function <bool (Tticket&)> callback){
+bool fnbuscar(vector <TBoleto> &vec, function <bool (TBoleto&)> callback){
 
     for(int i=0; i<vec.size();i++){
-        Tticket ticket=vec[i];
+        TBoleto ticket=vec[i];
 
         if(callback(ticket)==true){
             return true;

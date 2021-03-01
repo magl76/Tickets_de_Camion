@@ -5,18 +5,26 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <string.h>
 
 using namespace std;
 
-struct Tticket{
-    unsigned origen;
-    unsigned destino;
-    unsigned fecha;
-    unsigned precio;
+enum Tmes{enero, febrero, marzo, abril ,mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre};
+
+struct Tfecha{
+    short dia;
+    Tmes mes;
+    unsigned anno;
+    short hora, min;
 };
 
-bool callback (Tticket ticket_1);
+struct TBoleto{
+    string origen, destino;
+    Tfecha fecha;
+    int precio;
+};
 
-bool fnbuscar(vector <Tticket> &vec, function <bool (Tticket&)> callback);//funcion que recibe UN VECTOR POR REFERENCIA LLAMADO vec, y una funcion tipo BOOL QUE RECIBE COMO PARÀMETRO UN TTICKET POR REFERENCIA Y SE LLAMA CALLBACK
+bool fnbuscar(vector <TBoleto> &vec, function <bool (TBoleto&)> callback);//funcion que recibe UN VECTOR POR REFERENCIA LLAMADO vec, y una funcion tipo BOOL QUE RECIBE COMO PARÀMETRO UN TTICKET POR REFERENCIA Y SE LLAMA CALLBACK
+//esta funcion està lista para recibir cualquier funcion del tipo lambda, la cual serà definida funcionamiento
 
 #endif //EXAMEN_1_LIBRARY_H
