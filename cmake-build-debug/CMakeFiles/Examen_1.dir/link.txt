@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libExamen_1.so -o libExamen_1.so CMakeFiles/Examen_1.dir/library.cpp.o 

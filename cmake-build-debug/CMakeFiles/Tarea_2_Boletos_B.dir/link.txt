@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Tarea_2_Boletos_B.dir/main.cpp.o  -o Tarea_2_Boletos_B   -L/home/alexandergl76/Documentos/Arquitecturas_Programables/Tarea_2_Boletos_B/cmake-build-debug  -Wl,-rpath,/home/alexandergl76/Documentos/Arquitecturas_Programables/Tarea_2_Boletos_B/cmake-build-debug -lExamen_1 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/tarea_2_boletos.dir/main.cpp.o  -o tarea_2_boletos   -L/home/gerardo_alipi/CLionProjects/tarea_2_boletos/cmake-build-debug  -Wl,-rpath,/home/gerardo_alipi/CLionProjects/tarea_2_boletos/cmake-build-debug -lExamen_1 
